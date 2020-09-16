@@ -1,0 +1,410 @@
+<!doctype html> 
+    <html lang="pt-br">
+    <head>
+        <title>Clash Royale</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="css/normalize.css" rel="stylesheet">
+        <link type="text/css" href="../css/arenass.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi|Lobster|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Fredoka+One|Fugaz+One|Suez+One" rel="stylesheet">  
+    </head>
+        
+        <style>
+            
+            @-webkit-keyframes rodaroda
+            {
+                0%
+                {
+                    -webkit-transform:rotate(0deg);
+                      color: blueviolet;
+                }
+                
+                25%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: burlywood
+                  
+                }
+                
+                50%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aquamarine;    
+                }
+                
+                75%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aqua;    
+                }
+                
+                100%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: darkcyan;    
+                }
+            }    
+            
+            .cartas
+            {
+                width: 60%;
+                height: auto;
+                background-color: #fff;
+                box-shadow: 0 0 5p #555;
+                border-radius: 10px;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .um
+            {
+                width: 60%;
+                margin-bottom: 30px;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .tres h2
+            {
+                margin-left: 2%;
+            }
+            
+            .tres
+            {
+                margin-top: 2%;
+                width: 90%;
+                border-bottom: 1px solid #333;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: flex-start;
+                font-family: Chelsea Market;
+                color: #222;
+                align-items: center;
+            }
+            
+             .dois
+            {
+                width: 60%;
+                height: auto;  
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .h
+            {
+                margin-top: 5%;
+                font-family: chelsea Market;
+                color: #444;
+            }
+            
+            .icone
+            {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .tam_carta
+            {
+                width: 100px;
+                height: 128px;
+            }
+            
+            .tabela
+            {
+                margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                margin-bottom: 10%;
+                width: 90%;
+                border-bottom: 1px solid #333;
+                padding-bottom: 10%;
+            }
+            
+            .d
+            {
+                width: 90%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1874cd;
+                padding-left: 10px;
+                opacity: 1;
+                border-bottom: 1px solid #f1f1f1;
+                color: #f1f1f1;
+                font-family: Chelsea Market, sans-serif;
+            }
+            
+            .d:hover
+            {
+                background-color: darkslateblue;
+            }
+            
+            .cor1
+            {
+                margin-right: 10%;
+                color: red;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            
+            .cor2
+            {
+                margin-right: 10%;
+                color: darkgreen;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            
+            .cor3
+            {
+                margin-right: 10%;
+                color: yellow;
+                font-size: 20px;
+                font-weight: bold;
+                
+            }
+            
+            .cor4
+            {
+                margin-right: 10%;
+                color: green;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            
+            .icone2 
+            {
+                width: 45px;
+                height: 45px;     
+            }
+            
+            .cor5
+            {
+                margin-right: 10%;
+                font-size: 19px;
+                color: #fff;    
+                font-weight: bold;
+            }
+            
+            .cartas 
+            {
+                width: 60%;
+                height: auto;
+                background-color: #fff;
+                box-shadow: 0 0 5px #555;
+                border-radius: 10px;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .texto
+            {
+                width: 80%;
+                text-align: left;
+                font-family: Roboto;
+                line-height: 25px;
+                margin-bottom: 5%;
+            }
+            
+            .T
+            {
+                font-family: Roboto;
+                color: #333;
+            }
+            
+            .umi
+            {
+                width: 380px;
+                height: 300px;
+            }
+            
+            .doisi
+            {
+                width: 300px;
+                height: 200px;
+            }
+            
+            .tresi
+            {
+                width: 70%;
+            }
+            
+             @media (max-width:800px)
+             {
+                 .umi
+                 {
+                     width: 280px;
+                     height: 200px;
+                 }
+                 
+                 .doisi
+                {
+                    width: 250px;
+                    height: 150px;
+                }
+
+                .tresi
+                {
+                    width: 70%;
+                }
+             }
+            
+        </style>
+        
+          <body>
+        
+         <header>
+    
+            <div class="imagem">
+                <h1>META</h1>
+            </div>
+            
+              
+            <nav class="menu">
+                
+                
+                <ul class="M">
+                     <a href="../index.php"><li>Home</li></a>
+                     <a href="menu_carta.html"><li>Cartas</li></a>
+                     <a href="arenas.html"><li>Arenas</li></a>
+                     <a href="sobre.html"><li>Sobre Nos</li></a>  
+                    <a href="../php/cadastro.php"><li>Cadastro</li></a>
+                </ul>
+            </nav>
+        </header> 
+              <center>
+              
+              <h1 class="h">Os decks mais utilizado no momento</h1>
+              
+              <hr>
+              
+              
+              
+                   <nav class="cartas">
+                       
+                       
+                       <div class="tres"><img class="icone" src="../img/icone_ofensivo.jpg"><h2>OFENSIVO</h2></div>
+                       
+                       <div class="um">
+                        
+                           <img class="tam_carta" src="../img/cartas/raras/tresmosqueteiras.png">
+                           <img class="tam_carta" src="../img/cartas/comuns/morcego-clash-royale-wiki%20(1).png">
+                           <img class="tam_carta" src="../img/cartas/raras/gigante.png">
+                           <img class="tam_carta" src="../img/cartas/comuns/gangue-de-goblins-clash-royale.png">
+                       
+                       </div>
+                       
+                       <div class="dois">
+                            
+                           <img class="tam_carta" src="../img/cartas/comuns/horda-de-servos-clash-royale%20.png">
+                           <img class="tam_carta" src="../img/cartas/raras/card-coletor-de-elixir-clash-royale.png">
+                           <img class="tam_carta" src="../img/cartas/raras/arietedebatalha.png">
+                           <img class="tam_carta" src="../img/cartas/comuns/choque-clash-royale-zap.png">
+                        
+                       </div>
+                       
+                       <div class="tabela">
+                        
+                          
+                                
+                           <div class="d"><p>Potencial defensivo do deck</p><p class="cor1"> Ruim </p></div>
+                           <div class="d"><p>Potencial ofensivo do deck</p><p class="cor2"> Ótimo! </p></div>
+                           <div class="d"><p>Counters do deck</p><p class="cor3"> Mediocre </p></div>
+                           <div class="d"><p>Deck rápido</p><p class="cor4"> Bom </p></div>    
+                           <div class="d"><img class="icone2" src="../img/eixir.png"><p class="cor5"> 4.5 </p></div>
+                       
+                       </div>
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       <div class="tres"><img class="icone" src="../img/icone_defensivo.jpg"><h2>DEFENSIVO</h2></div>
+                       
+                       <div class="um">
+                        
+                          
+                           <img class="tam_carta" src="../img/cartas/comuns/morcego-clash-royale-wiki%20(1).png">
+                            <img class="tam_carta" src="../img/cartas/lendarias/magoeletrico.png">
+                           <img class="tam_carta" src="../img/cartas/comuns/cavaleiro-clash-royale-carta.png">
+                           <img class="tam_carta" src="../img/cartas/raras/minipekka.png">
+                       
+                       </div>
+                       
+                       <div class="dois">
+                            
+                           <img class="tam_carta" src="../img/cartas/lendarias/mineiro.png">
+                           <img class="tam_carta" src="../img/cartas/lendarias/princesa.png">
+                           <img class="tam_carta" src="../img/cartas/epicas/tornado-clash-royale.png">
+                           <img class="tam_carta" src="../img/cartas/comuns/choque-clash-royale-zap.png">
+                        
+                       </div>
+                    
+                       
+                       <div class="tabela">
+                        
+                          
+                                
+                           <div class="d"><p>Potencial defensivo do deck</p><p class="cor2"> Ótimo! </p></div>
+                           <div class="d"><p>Potencial ofensivo do deck</p><p class="cor3"> Mediocre </p></div>
+                           <div class="d"><p>Counters do deck</p><p class="cor4"> Bom </p></div>
+                           <div class="d"><p>Deck rápido</p><p class="cor2"> Ótimo! </p></div>    
+                           <div class="d"><img class="icone2" src="../img/eixir.png"><p class="cor5"> 2.9 </p></div>
+                       
+                       </div>
+                       
+                       <h1 class="T"> O Deck perfeito no Clash Royale</h1>
+                       
+                       <p class="texto">Primeiro de tudo, deixe-me dizer-lhe que não há um único Deck perfeito - há muitas combinações diferentes que fazem um Deck vencedor. Tudo que você precisa é ter um Deck equilibrado para atacar e defender - isso é tudo que você precisa para vencer no Clash Royale. Nas próximas seções, vou mostrar o que você tem que manter em mente quando você montar seu Deck e no final você vai encontrar o que eu chamo de "Fórmula do Deck Vencedor".</p>
+                       
+                        <h1 class="T"> Como fazer um deck equilibrado?</h1>
+                         <img class="umi" src="../img/como-fazer-um-deck-clash-royale.jpg">
+                       <p class="texto"><br>No Clash Royale, equilíbrio tem a ver com a variedade de cartas no seu deck.Como você deve saber, existem “classes” para as cartas “tanks, suportes, etc”. Você deve equilibrar as cartas de cada classe: um deck só de cartas tanks não ia dar muito certo, não é mesmo?<br>Por isso é que é muito importante variar as cartas do seu deck.
+
+</p>
+                       
+                        <h1 class="T"> O Elixir</h1>
+                       
+                       <p class="texto">Todos sabemos que quando criamos um deck, o Clash Royale indica qual o “custo médio” do nosso deck, certo?</p>
+                       <img class="doisi" src="../img/elixir-clash-royale-como-montar-deck-equilibrado.jpg">
+                       <p class="texto"> Se você não sabe, existe decks “baratos” e decks “caros”. Vou te explicar:Custo médio: 3.0 ou inferior (barato)<br>
+                           Custo médio: entre 3.1 e 3.9 (médio)<br>
+                           Custo médio: 4.0 ou superior (caro)</p>
+                      
+                         <img class="tresi" src="../img/custo-medio-como-montar-um-deck-clash-royale%20(1).jpg">
+                       <p class="texto">  O mais recomendado por mim é o deck médio, pois não é um deck demasiado caro, nem barato, é perfeito.</p>
+                      
+                      
+                  </nav>
+                  
+                  
+                  
+                  
+
+              </center>
+             
+
+        
+          <footer>
+        
+           <p>Agradecemos a visita, aproveite quanto e quando quiser !!!<p>
+            
+          
+            
+            <img src="../img/menu2.gif">
+                
+        </footer>
+        

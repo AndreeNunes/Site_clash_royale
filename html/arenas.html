@@ -1,0 +1,395 @@
+<!doctype html> 
+    <html lang="pt-br">
+    <head>
+        <title>Clash Royale</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="css/normalize.css" rel="stylesheet">
+        <link type="text/css" href="../css/arenas.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi|Lobster|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Fredoka+One|Fugaz+One|Suez+One" rel="stylesheet">  
+    </head>
+        
+        <style>
+            
+            @-webkit-keyframes rodaroda
+            {
+                0%
+                {
+                    -webkit-transform:rotate(0deg);
+                      color: blueviolet;
+                }
+                
+                25%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: burlywood
+                  
+                }
+                
+                50%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aquamarine;    
+                }
+                
+                75%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aqua;    
+                }
+                
+                100%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: darkcyan;    
+                }
+            }      
+            
+            .a1
+            {
+               
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #111;
+            }
+            
+            .ti 
+            {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .arenas
+            {
+                display: flex;
+                margin-top: 7%;
+                justify-content: center;
+            }
+
+            .a1
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                margin-left: 2%;
+                height: 320px;
+                box-shadow: 0 0 5px #777;
+                border-radius: 10px;
+                background: #f1f1f1;
+            }
+            
+            .a1:hover
+            {
+                background-color: darkslateblue;
+                transition: 0.5s;
+                color: #f1f1f1;
+            }
+            
+            .a1:hover h2
+            {
+                color: #f1f1f1;
+            }
+            
+            .a1:hover p
+            {
+                color: #f1f1f1;
+            }
+            
+            .a2
+            {
+                border-radius: 10%;
+                display: flex;
+                margin-top: 5%;
+                align-items: center;
+                justify-content: center;
+                background-color: #f1f1f1;
+                width: 60%;
+                height: 210px;
+                
+            }
+            
+            h2
+            {
+                width: 100%;
+                font-size: 20px;
+                padding: 10px;
+                color: #444;
+                font-family: Chelsea Market;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .trofeus
+            {
+                margin-top: 20px;
+                width: 20px;
+                height: 20px;
+            }
+            
+            p
+            {
+                color: #444;
+                font-family: Chelsea Market;
+            }
+            
+            .oq
+            {
+                margin-top: 8%;
+                color: #222;
+                width: 100%;
+                text-align: center;
+                font-family: Chelsea Market;
+              
+            }
+            
+            .espe
+            {
+                -webkit-animation: rodaroda 2.5s linear infinite alternate;
+                width: 100%;
+                font-size: 20px;
+                padding: 10px;
+                font-family: Chelsea Market;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            @media (max-width:800px)
+            {
+                
+                
+                .a1
+                {
+                    
+                    height: 200px;
+                    margin-bottom: 30px; 
+                  
+                }
+                
+                .a1:hover .a2
+                {
+                    background-color: darkslateblue;
+                    transition: 0.5s;
+                }
+                
+                h2
+                {         
+                    font-size: 11px;  
+                }
+                
+                 .ti 
+                {
+                    width: 50px;
+                    height: 50px;
+                }
+                
+                .espe
+                {
+                    font-size:7px;
+                }
+            }
+        
+        </style>
+        
+    <body>
+        
+        <header>
+    
+            <div class="imagem">
+                <h1>ARENAS</h1>
+            </div>
+            
+              
+            <nav class="menu">
+                
+                
+                <ul class="M">
+                     <a href="../index.php"><li>Home</li></a>
+                     <a href="menu_carta.html"><li>Cartas</li></a>
+                     <a href="meta.html"><li>Meta</li></a>
+                     <a href="sobre.html"><li>Sobre Nos</li></a>   
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 class="oq">TODAS AS ARENAS DO CLASH ROYALE</h1>
+        
+        <hr>
+        
+        <section class="arenas">     
+        
+            <div class="a1">
+                
+                  <h2>Estádio Goblin</h2>
+                
+                <div class="a2">
+                    
+                   <img class="ti" src="../img/arenas/arena1.png">
+                
+                </div>
+                            
+               <img class="trofeus" src="../img/trofeus.png"><p>0+</p>
+                       
+            </div>
+            
+            <div class="a1">
+                
+                 <h2>Fosso dos Ossos</h2>
+              <div class="a2">
+                   <img class="ti" src="../img/arenas/arena2.png">
+                </div>
+                
+                   <img class="trofeus" src="../img/trofeus.png"><p>400+</p>
+            </div>
+            
+             <div class="a1">
+                
+                  <h2>Torneio dos Barbáros</h2>
+                <div class="a2">
+                   <img class="ti" src="../img/arenas/arena3.png">
+                
+                </div>
+                 
+                
+                 <img class="trofeus" src="../img/trofeus.png"><p>800+</p>
+                
+                
+            </div>   
+        
+        </section>
+        
+         <section class="arenas">
+    
+            
+            <div class="a1">
+                 <h2>Parquinho da P.E.K.K.A</h2>
+              <div class="a2">
+                   <img class="ti" src="../img/arenas/arena4.png">
+                </div>
+                
+                  <img class="trofeus" src="../img/trofeus.png"><p>1100+</p>
+            </div>
+             
+             
+            <div class="a1">
+                 <h2>Vale dos Feitiços</h2>
+                
+                <div class="a2">
+                   <img class="ti" src="../img/arenas/arena-clash-royale-vale-dos-feiticos-speell-valley.png">
+                
+                </div>          
+                
+                 <img class="trofeus" src="../img/trofeus.png"><p>1400+</p>           
+                
+            </div>
+             
+              <div class="a1">
+                   <h2>Arena do Construtor</h2>
+              <div class="a2">
+                   <img class="ti" src="../img/arenas/arena6.png">
+                </div>
+                
+                   <img class="trofeus" src="../img/trofeus.png"><p>1700+</p>
+            </div>
+        
+        </section>
+        
+         <section class="arenas">
+              
+        
+            <div class="a1">
+                <h2>Arena Real</h2>
+                
+                <div class="a2">
+                   <img class="ti" src="../img/arenas/arena7.png">
+                
+                </div>
+                 
+                <img class="trofeus" src="../img/trofeus.png"><p>2000+</p>
+            </div>
+            
+            <div class="a1">
+                <h2>Pico Congelado</h2>
+              <div class="a2">
+                  
+                   <img class="ti" src="../img/arenas/arena8.png">
+                </div>
+                
+                  <img class="trofeus" src="../img/trofeus.png"><p>2300+</p>
+            </div>
+             
+              <div class="a1">
+                   <h2>Arena da Selva</h2>
+                
+                <div class="a2">
+                   <img class="ti" src="../img/arenas/arena9.png">
+                
+                </div>
+                
+             
+                
+                 <img class="trofeus" src="../img/trofeus.png"><p>2600+</p>
+                
+                
+            </div>
+        
+        
+        
+        </section>
+         <section class="arenas">
+        
+           
+            
+            <div class="a1">
+                <h2>Montanha dos Porcos</h2>
+              <div class="a2">
+                   <img class="ti" src="../img/arenas/arena10.png">
+                </div>
+                
+                   <img class="trofeus" src="../img/trofeus.png"><p>3000+</p>
+            </div>
+             
+              <div class="a1">
+                <h2>Electrovale</h2>
+                <div class="a2">
+                   <img class="ti" src="../img/arenas/arena11.png">
+                
+                </div>
+                
+             
+                
+                 <img class="trofeus" src="../img/trofeus.png"><p>3400+</p>
+                
+                
+            </div>
+            
+            <div class="a1">
+                <h2 class="espe">Arena Lendária</h2>
+              <div class="a2">
+                   <img class="ti" src="../img/arenas/arena12.png">
+                </div>
+                
+                   <img class="trofeus" src="../img/trofeus.png"><p>3800+</p>
+            </div>
+        
+        
+        
+        
+        
+        </section>
+
+        
+          <footer>
+        
+           <p>Agradecemos a visita, aproveite quanto e quando quiser !!!<p>
+            
+          
+            
+            <img src="../img/menu2.gif">
+                
+        </footer>
+        

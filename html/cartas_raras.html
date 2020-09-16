@@ -1,0 +1,732 @@
+<!doctype html> 
+    <html lang="pt-br">
+    <head>
+        <title>Clash Royale</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="css/normalize.css" rel="stylesheet">
+        <link type="text/css" href="../css/arenas.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi|Lobster|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Fredoka+One|Fugaz+One|Suez+One" rel="stylesheet">  
+    </head>
+        
+        <style>
+            
+            
+            @-webkit-keyframes rodaroda
+            {
+                0%
+                {
+                    -webkit-transform:rotate(0deg);
+                      color: blueviolet;
+                }
+                
+                25%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: burlywood
+                  
+                }
+                
+                50%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aquamarine;    
+                }
+                
+                75%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aqua;    
+                }
+                
+                100%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: darkcyan;    
+                }
+            }    
+            
+            .cartas
+            {
+                width: 60%;
+                height: auto;
+                background-color: #fff;
+                box-shadow: 0 0 5p #555;
+                border-radius: 10px;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .um
+            {
+                width: 60%;
+                margin-bottom: 30px;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .tres h2
+            {
+                margin-left: 2%;
+            }
+            
+            .tres
+            {
+                margin-top: 2%;
+                width: 90%;
+                border-bottom: 1px solid #333;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: flex-start;
+                font-family: Chelsea Market;
+                color: #222;
+                align-items: center;
+            }
+            
+             .dois
+            {
+                width: 60%;
+                height: auto;  
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .h
+            {
+                margin-top: 5%;
+                font-family: chelsea Market;
+                color: #444;
+            }
+            
+            .icone
+            {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .tam_carta
+            {
+                width: 100px;
+                height: 128px;
+            }
+            
+            .tabela
+            {
+                margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                margin-bottom: 10%;
+                width: 90%;
+                border-bottom: 1px solid #333;
+                padding-bottom: 10%;
+            }
+            
+            .d
+            {
+                width: 90%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1874cd;
+                padding-left: 10px;
+                opacity: 1;
+                border-bottom: 1px solid #f1f1f1;
+                color: #f1f1f1;
+                font-family: Chelsea Market, sans-serif;
+            }
+            
+            .d:hover
+            {
+                background-color: darkslateblue;
+            }
+            
+            .cor1
+            {
+                margin-right: 10%;
+                color: red;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            
+            .cor2
+            {
+                margin-right: 10%;
+                color: darkgreen;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            
+            .cor3
+            {
+                margin-right: 10%;
+                color: yellow;
+                font-size: 20px;
+                font-weight: bold;
+                
+            }
+            
+            .cor4
+            {
+                margin-right: 10%;
+                color: green;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            
+            .icone2 
+            {
+                width: 45px;
+                height: 45px;     
+            }
+            
+            .cor5
+            {
+                margin-right: 10%;
+                font-size: 19px;
+                color: #fff;    
+                font-weight: bold;
+            }
+            
+            .cartas 
+            {
+                width: 60%;
+                height: auto;
+                background-color: #fff;
+                box-shadow: 0 0 5px #555;
+                border-radius: 10px;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .texto
+            {
+                width: 80%;
+                text-align: left;
+                font-family: Roboto;
+                line-height: 25px;
+                margin-bottom: 5%;
+            }
+            
+            .T
+            {
+                font-family: Roboto;
+                color: #333;
+            }
+            
+
+            
+            @-webkit-keyframes rodaroda
+            {
+                0%
+                {
+                    -webkit-transform:rotate(0deg);
+                      color: blueviolet;
+                }
+                
+                25%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: burlywood
+                  
+                }
+                
+                50%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aquamarine;    
+                }
+                
+                75%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: aqua;    
+                }
+                
+                100%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: darkcyan;    
+                }
+            }      
+            
+            .a1
+            {
+               
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #111;
+            }
+            
+            .ti 
+            {
+                width: 120px;
+                height: 140px;
+            }
+            
+            .arenas
+            {
+                display: flex;
+                margin-top: 7%;
+                justify-content: center;
+            }
+
+            .a1
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                margin-left: 2%;
+                height: 320px;
+                box-shadow: 0 0 5px #777;
+                border-radius: 10px;
+                background: #f1f1f1;
+            }
+            
+            .a1:hover
+            {
+                background-color: darkslateblue;
+                transition: 0.5s;
+                color: #f1f1f1;
+            }
+            
+            .a1:hover h2
+            {
+                color: #f1f1f1;
+            }
+            
+            .a1:hover p
+            {
+                color: #f1f1f1;
+            }
+            
+            .a2
+            {
+                border-radius: 10%;
+                display: flex;
+                margin-top: 5%;
+                align-items: center;
+                justify-content: center;
+                background-color: #f1f1f1;
+                width: 60%;
+                height: 210px;
+                
+            }
+            
+            h2
+            {
+                width: 100%;
+                font-size: 20px;
+                padding: 10px;
+                color: #444;
+                font-family: Chelsea Market;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .trofeus
+            {
+                margin-top: 20px;
+                width: 20px;
+                height: 20px;
+            }
+            
+            p
+            {
+                color: #444;
+                font-family: Chelsea Market;
+            }
+            
+            .oq
+            {
+                margin-top: 8%;
+                color: #222;
+                width: 100%;
+                text-align: center;
+                font-family: Chelsea Market;
+              
+            }
+            
+            .espe
+            {
+                -webkit-animation: rodaroda 2.5s linear infinite alternate;
+                width: 100%;
+                font-size: 20px;
+                padding: 10px;
+                font-family: Chelsea Market;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .len
+            {
+                -webkit-animation: rodaroda 2.5s linear infinite alternate;
+            }
+            
+            .epi
+            {
+                color: darkslateblue;
+            }
+            
+            .com
+            {
+                color: #1874cd;
+            }
+            
+            .rar
+            {
+                color: orange;
+            }
+            
+             .a1:hover .a2
+             {
+                 background-color: darkslateblue;
+                 transition: 0.5s;
+             }
+            
+            @media (max-width:800px)
+            {
+                
+                
+                .a1
+                {
+                    
+                    height: 200px;
+                    margin-bottom: 30px; 
+                  
+                }
+                
+                .a1:hover .a2
+                {
+                    background-color: darkslateblue;
+                    transition: 0.5s;
+                }
+                
+                h2
+                {         
+                    font-size: 7px;  
+                }
+                
+                 .ti 
+                {
+                    width: 50px;
+                    height: 70px;
+                }
+                
+                .espe
+                {
+                    font-size:7px;
+                }
+            }
+        
+        </style>
+        
+        <style>
+      @charset "utf-8";
+/* CSS Document  */
+/* estilo_05.css */
+
+ @-webkit-keyframes rodaroda
+            {
+                0%
+                {
+                    -webkit-transform:rotate(0deg);
+                      color: #87CEEB; 
+                }
+                
+                25%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: #00BFFF;
+                  
+                }
+                
+                50%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: #4682B4;    
+                }
+                
+                75%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: #6495ED;    
+                }
+                
+                100%
+                {
+                    -webkit-transform:rotate(0deg);
+                    color: #1E90FF;    
+                }
+            }      
+
+#caixa
+{
+    width: 85%;
+    height: auto;
+    padding-bottom: 1%;
+    float: left;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px orange inset; 
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.comum
+{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 6%;
+    -webkit-animation: rodaroda 4.5s linear infinite alternate;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 3px;
+     
+}
+            
+.rara
+{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 6%;
+    color: orange;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.elixir
+{
+    padding: 1%;
+    margin-top: 6%;
+    font-size: 15px;
+    font-family:Blippo, fantasy;
+    color: #CD00CD;
+}
+
+.cartas
+{
+   width: 10%;
+   margin-left: 18%;
+   margin-top: -9.8%;
+   display: inline;
+}
+
+.cartas2
+{
+   width: 10%;
+   margin-left: 3%;
+   margin-top: -9.8%;
+   display: inline;
+}
+
+#caixaA
+{
+    width: 85%;
+    height: 310px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px darkslateblue; 
+    border: 1px solid #00BFFF;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.cartas3
+{
+   width: 10%;
+   margin-left: 17.9%;
+   margin-top: 1%;
+   display: inline;
+}
+
+#rodape
+{
+    width: 158.5%;
+    margin-left: -29.3%;
+    height: 70px;
+    margin-top: 110%;
+    background-color: #1874CD;
+}
+
+#rodape img
+{
+    width: 8%;
+    padding: 0.5%
+  
+}
+
+
+
+
+
+
+
+        
+        
+        </style>
+
+          <body>
+        
+         <header>
+    
+            <div class="imagem">
+                <h1>CARTAS</h1>
+            </div>
+            
+              
+            <nav class="menu">
+                
+                
+                <ul class="M">
+                     <a href="../index.php"><li>Home</li></a>
+                     <a href="arenas.html"><li>Arenas</li></a>
+                     <a href="meta.html"><li>Meta</li></a>
+                     <a href="sobre.html"><li>Sobre Nos</li></a>   
+                </ul>
+            </nav>
+        </header>      
+    
+         <p class="rara">RARAS</p>
+              
+               <style>
+                
+                  .b
+                  {
+                      display: flex;
+                      width: 15%;
+                      margin-left: 6%;
+                      justify-content: space-between;
+                      height: auto;
+                      margin-bottom: 3%;
+                  }
+                  
+                  .b a
+                  {
+                      
+                      text-decoration: none;
+                  }
+                  
+                  .ba p
+                  {
+                      font-family: Roboto;
+                      color: darkslateblue;
+                      font-size: 16px;
+                      font-weight: bold;
+                  }
+                  
+                  @media (max-width:800px)
+                  {
+                      .b
+                      {
+                          flex-direction: column;
+                      }
+                  }
+              
+              </style>
+        
+              <div class="b">
+              
+                <div class="ba"><a href="cartas_comuns.html"><p>ANTERIOR</p></a></div>
+                <div class="ba"><a href="cartas_epicas.html"><p>PRÓXIMA</p></a></div>
+                  
+              </div>
+        
+        
+         
+    
+        <div id="caixa">
+            
+            <p class="elixir">CUSTO DE ELIXIR : 2</p>
+            
+            <img class="cartas"src="../img/cartas/raras/gdegelo.png">
+            
+        
+        </div>
+        
+     
+
+        
+          <div id="caixa">
+            
+            <p class="elixir">CUSTO DE ELIXIR : 3</p>
+            
+              <img class="cartas"src="../img/cartas/raras/cura.png">
+                 <img class="cartas2"src="../img/cartas/raras/lapide.png">
+                 <img class="cartas2"src="../img/cartas/raras/megasservo.png">
+                <img class="cartas2"src="../img/cartas/raras/goblincomdardos.png">
+        
+        </div>
+        
+        
+        <div id="caixa">
+            
+            <p class="elixir">CUSTO DE ELIXIR : 4</p>
+            
+               <img class="cartas"src="../img/cartas/raras/boladefogo.png">
+               <img class="cartas2"src="../img/cartas/raras/corredor.png">
+               <img class="cartas2"src="../img/cartas/raras/minipekka.png">
+               <img class="cartas2"src="../img/cartas/raras/mosqueteira.png">
+               <img class="cartas2"src="../img/cartas/raras/valquiria.png">
+               <img class="cartas2"src="../img/cartas/raras/fornalha.png">
+        
+        </div>
+        
+         <div id="caixa">
+            
+            <p class="elixir">CUSTO DE ELIXIR : 5</p>
+            
+            <img class="cartas"src="../img/cartas/raras/cabanadegoblin.png">
+            <img class="cartas2"src="../img/cartas/raras/gigante.png">
+            <img class="cartas2"src="../img/cartas/raras/magodefogo.png">
+            <img class="cartas2"src="../img/cartas/raras/torredebombas.png">
+            <img class="cartas2"src="../img/cartas/raras/torreinferno.png">  
+        
+        </div>
+  
+        <div id="caixa">
+            
+            <p class="elixir">CUSTO DE ELIXIR : 7 E 9</p>
+            
+             <img class="cartas"src="../img/cartas/raras/cabanadebarbaro.png">
+              <img class="cartas2"src="../img/cartas/raras/tresmosqueteiras.png">
+              </div>
+        
+                  
+              
+              
+             
+             
+
+        
+
+                 
+          <footer>
+        
+           <p>Agradecemos a visita, aproveite quanto e quando quiser !!!<p>
+            
+          
+            
+            <img src="../img/menu2.gif">
+                
+        </footer>
+        
